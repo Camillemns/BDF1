@@ -1,2 +1,2 @@
-/home/bloodofcocoa/Desktop/BigDataFramework/lab_JAVA/hadoop-examples-mapreduce/src/test/java/com/opstty/reducer/IntSumReducerTest.java
-/home/bloodofcocoa/Desktop/BigDataFramework/lab_JAVA/hadoop-examples-mapreduce/src/test/java/com/opstty/mapper/TokenizerMapperTest.java
+/home/bloodofcocoa/Desktop/BigDataFramework/lab_JAVA/BDF1/src/test/java/com/opstty/mapper/TokenizerMapperTest.java
+/home/bloodofcocoa/Desktop/BigDataFramework/lab_JAVA/BDF1/src/test/java/com/opstty/reducer/IntSumReducerTest.java

@@ -1,10 +1,12 @@
 package com.opstty.job;
 
-import com.opstty.mapper.TokenizerMapper;
-import com.opstty.reducer.IntSumReducer;
+import com.opstty.mapper.DistrictTreeMapper;
+import com.opstty.reducer.DistrictTreeReducer;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
@@ -21,11 +23,11 @@ public class DistrictTrees {
         }
         Job job = Job.getInstance(conf, "districtTrees");
         job.setJarByClass(DistrictTrees.class);
-        job.setMapperClass(TokenizerMapper.class);
-        job.setCombinerClass(IntSumReducer.class);
-        job.setReducerClass(IntSumReducer.class);
+        job.setMapperClass(DistrictTreeMapper.class);
+        job.setCombinerClass(DistrictTreeReducer.class);
+        job.setReducerClass(DistrictTreeReducer.class);
         job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);
+        job.setOutputValueClass(NullWritable.class);
         for (int i = 0; i < otherArgs.length - 1; ++i) {
             FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
         }

@@ -1,4 +1,13 @@
-com/opstty/AppDriver.class
-com/opstty/job/WordCount.class
+com/opstty/mapper/SpeciesMapper.class
+com/opstty/job/NumberSpecies.class
 com/opstty/reducer/IntSumReducer.class
+com/opstty/job/DistrictTrees.class
+com/opstty/reducer/NumberSpeciesReducer.class
+com/opstty/reducer/SpeciesReducer.class
 com/opstty/mapper/TokenizerMapper.class
+com/opstty/reducer/DistrictTreeReducer.class
+com/opstty/AppDriver.class
+com/opstty/mapper/DistrictTreeMapper.class
+com/opstty/job/WordCount.class
+com/opstty/mapper/NumberSpeciesMapper.class
+com/opstty/job/Species.class
